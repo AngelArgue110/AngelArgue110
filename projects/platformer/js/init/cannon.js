@@ -33,12 +33,10 @@
     createCannon("top", 260)
     createCannon("top", 650)
     createCannon("top", 660)
-    createCannon("top", 50)
-    createCannon("top", 60)
     createCannon("top", 850)
     createCannon("top", 860)
-    createCannon("right", 300)
-    createCannon("right", 125)
+    createCannon("right", 260)
+    createCannon("right", 50)
 
     // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
     ////////////////////////////////////////////////////////////////////////
