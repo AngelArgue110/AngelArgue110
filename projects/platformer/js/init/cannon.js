@@ -36,7 +36,7 @@
     createCannon("top", 850)
     createCannon("top", 860)
     createCannon("right", 260)
-    createCannon("right", 50)
+    createCannon("right", 10)
 
     // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
     ////////////////////////////////////////////////////////////////////////
