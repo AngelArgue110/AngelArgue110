@@ -42,6 +42,8 @@
     createCollectable(type.kennedi, 815, 275, 10, 0.7);
     createCollectable(type.kennedi, 815, 75, 10, 0.7);
     createCollectable(type.kennedi, 1, 75, 10, 0.7);
+    createCollectable(type.kennedi, 1, 275, 10, 0.7);
+    createCollectable(type.kennedi, 460, 250, 10, 0.7);
 
     // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
     ////////////////////////////////////////////////////////////////////////
