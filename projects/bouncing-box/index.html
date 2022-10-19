@@ -6,14 +6,14 @@
 	<script src="jquery.min.js"></script>
 	<style>
 		.box {
-			width: 70px;
-			height: 70px;
-			background-color: rgb(248, 0, 0);
-			background-image:;
+			width: 100px;
+			height: 100px;
+			background-size: 100% 100%;
+			background-image: url("https://iconape.com/wp-content/png_logo_vector/duck-hunt-logo.png");
 			font-size: 300%;
 			font-family: segoe ui black;
 			font-style: oblique;
-			color: white;
+			color: rgb(255, 0, 0);
 			text-align: center;
 			display: block;
 			position: absolute;
@@ -21,6 +21,8 @@
 			left: 0px;  /* <--- Change me! */
 		}
 		.board{
+			background-size: 100% 115%;
+			background-image: url("https://wallpapercave.com/wp/wp7707840.png");
 			height: 100vh;
 		}
 	</style>
@@ -67,11 +69,11 @@
 			//////////////////////////////////////////////////////////////////
 			
 			// TODO 2 - Variable declarations 
-			var positionX = 0;
-			var positionY = 0;
+			var positionX = 400;
+			var positionY = boardHeight;
 			var points = 0;
-			var speedX = 10;
-			var speedY = 10;
+			var speedX = 15;
+			var speedY = 15;
 			/* 
 			This Function will be called 20 times/second. Each time it is called,
 			it should move the Box to a new location. If the box drifts off the screen
@@ -116,8 +118,8 @@
 			} else if (speedY < 0) {
 				speedY = speedY - 3
 			}
-			positionX = 0;
-			positionY = 50;
+			positionX = Math.random() * boardWidth;
+			positionY = boardHeight;
 			points = points + 1
 			changeBoxText(points);
 			};
