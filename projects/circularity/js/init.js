@@ -77,7 +77,7 @@ var init = function (window) {
             // TODO 6 : YOUR CODE STARTS HERE //////////////////////
             // Below checks for the left side
             if ( circle.x < 0 ) {
-                circle.x = 0;
+                circle.x = canvas.width;
             }
             // Below checks for the bottom side
             if ( circle.y > canvas.height ) {
@@ -85,7 +85,7 @@ var init = function (window) {
             }
             // Below checks for the top side
             if ( circle.y < 0 ) {
-                circle.y = 0;
+                circle.y = canvas.height;
             }
             // YOUR TODO 6 CODE ENDS HERE //////////////////////////
         }
