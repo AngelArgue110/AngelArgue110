@@ -27,7 +27,7 @@ var init = function (window) {
             circle = draw.randomCircleInArea(canvas, true, true, '#999', 2);
             physikz.addRandomVelocity(circle, canvas, 10, 10);
             view.addChild(circle);
-            circles.push(circles);
+            circles.push(circle);
         }
         // TODO 3 / 7 : Call the drawCircle() function 
         drawCircle();
@@ -46,11 +46,12 @@ var init = function (window) {
         */
         function update() {
             // TODO 4 : Update the circle's position //
-            physikz.updatePosition(circles[0])
-            physikz.updatePosition(circles[1])
-            physikz.updatePosition(circles[2])
-            physikz.updatePosition(circles[3])
-            physikz.updatePosition(circles[4])
+
+            physikz.updatePosition(circles[0]);
+            physikz.updatePosition(circles[1]);
+            physikz.updatePosition(circles[2]);
+            physikz.updatePosition(circles[3]);
+            physikz.updatePosition(circles[4]);
             // TODO 5 / 10 : Call game.checkCirclePosition() on your circles.
             game.checkCirclePosition(circles[0])
             game.checkCirclePosition(circles[1])
@@ -75,18 +76,7 @@ var init = function (window) {
             }
             
             // TODO 6 : YOUR CODE STARTS HERE //////////////////////
-            // Below checks for the left side
-            if ( circle.x < 0 ) {
-                circle.x = canvas.width;
-            }
-            // Below checks for the bottom side
-            if ( circle.y > canvas.height ) {
-                circle.y = 0;
-            }
-            // Below checks for the top side
-            if ( circle.y < 0 ) {
-                circle.y = canvas.height;
-            }
+            
             // YOUR TODO 6 CODE ENDS HERE //////////////////////////
         }
         
