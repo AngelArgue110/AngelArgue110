@@ -80,6 +80,16 @@ var init = function (window) {
             if ( circle.x < 0 ) {
                 circle.x = canvas.width;
             }
+
+            // Below checks for the top side
+            if ( circle.y < 0 ) {
+                circle.y = canvas.width;
+            }
+
+            // Below checks for the left side
+            if ( circle.y > canvas.height ) {
+                circle.y = 0;
+            }
             // YOUR TODO 6 CODE ENDS HERE //////////////////////////
         }
         
