@@ -83,7 +83,7 @@ var init = function (window) {
 
             // Below checks for the top side
             if ( circle.y < 0 ) {
-                circle.y = canvas.width;
+                circle.y = canvas.height;
             }
 
             // Below checks for the left side
